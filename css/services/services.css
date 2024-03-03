@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .why-choose-us-container {
   flex-wrap: wrap;
 }

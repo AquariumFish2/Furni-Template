@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .our-team-container {
   width: 100%;
   background-color: #eff2f1;
