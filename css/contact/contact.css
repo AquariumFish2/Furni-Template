@@ -1,5 +1,5 @@
 body{
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 main {
@@ -85,7 +85,7 @@ main section form button {
 main section form label {
   font-size: 12px;
 }
-input {
+#fname,#lname {
   width: 100%;
   margin: 0;
 }

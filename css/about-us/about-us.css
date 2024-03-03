@@ -40,6 +40,9 @@ body{
     text-decoration: none;
 }
 
+.test{
+    padding-bottom: 100px;
+}
 @media (max-width:1000px) {
     .our-team-container .members-container .member{
         width: 45% !important;

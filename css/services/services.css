@@ -19,6 +19,15 @@ body{
   font-weight: bold;
 }
 
+.products-container{
+  padding: 0 40px
+}
+
+.products-container button{
+  margin-top: 20px;
+  background-color: black;
+}
+
 @media (max-width: 950px) {
   .why-choose-us-container .reason {
     width: 30%;
