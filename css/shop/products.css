@@ -1,0 +1,10 @@
+.products-container{
+    flex-wrap: wrap;
+    padding-bottom: 15%;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+}

@@ -1,0 +1,119 @@
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #eff2f1;
+  align-items: center;
+}
+
+main section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+main .contact-info {
+  padding: 50px 0;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main .contact-info .info {
+  display: flex;
+  width: 33%;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+main .contact-info .information {
+  flex-shrink: 100;
+}
+
+main .contact-info .icon {
+  background-color: #3b5d50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  margin-right: 5px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+main section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  padding-bottom: 20%;
+}
+
+main section form .set {
+  padding: 0px 5px;
+}
+
+main section form .email-set {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+main section form .email-set input {
+  width: 100%;
+}
+
+main section form .message-set {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+main section form button {
+  margin-top: 5%;
+  width: fit-content;
+  background-color: black;
+}
+
+main section form label {
+  font-size: 12px;
+}
+input {
+  width: 100%;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ced4da;
+  outline: none;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+textarea:focus {
+  border: 1px solid black;
+  box-shadow: 0 0 8px 0 black;
+}
+
+@media (max-width: 1000px) {
+  main .contact-info {
+    flex-direction: column;
+    width: 50%
+  }
+
+  main .contact-info .info {
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

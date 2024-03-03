@@ -1,0 +1,131 @@
+.help {
+  display: flex;
+  width: 100%;
+  background-color: #eff2f1;
+  padding: 4vw;
+  flex-direction: row-reverse;
+}
+
+.help .images {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(27, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+
+  padding: 0 50px;
+  z-index: 1;
+}
+
+.help img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.help .images::before {
+  content: "";
+  background-image: url("/images/dots-green.svg");
+  position: absolute;
+  min-width: 200px;
+  min-height: 200px;
+  top: -10%;
+  left: -5%;
+  z-index: -1;
+}
+.help .images .big-image {
+  grid-column: 1 / span 18;
+  grid-row: 1 / span 18;
+}
+
+.help .images .second-image {
+  grid-column: 20 / span 28;
+  grid-row: 1 / span 5;
+}
+
+.help .images .third-image {
+  grid-column: 14 / span 27;
+  grid-row: 6 / span 18;
+}
+
+.help .describtion {
+  max-width: 40%;
+}
+
+.help .describtion h2 {
+  max-width: 60%;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.help .describtion p {
+  opacity: 0.8;
+  line-height: 1.7;
+  margin-bottom: 5%;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.help .describtion ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+}
+
+.help .describtion li {
+  font-size: 14px;
+  padding: 8px;
+  opacity: 0.8;
+  position: relative;
+}
+
+.help .describtion li::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid black;
+  left: -10px;
+  top: 13px;
+}
+
+.help .describtion button {
+  background-color: black;
+  margin-top: 5%;
+  opacity: 0.9;
+}
+
+@media (max-width: 760px) {
+  .help {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help .describtion {
+    max-width: 100%;
+    margin-bottom: 20%;
+  }
+
+  .help .images {
+    min-width: 100%;
+  }
+
+  .help .images::before {
+    scale: 0.7;
+    top: -15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .help .images::before {
+    top: -20%;
+  }
+}

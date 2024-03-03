@@ -1,0 +1,154 @@
+.test {
+  display: grid;
+  position: relative;
+  grid-template-areas:
+    "header header header"
+    "button1 test-content button2";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  background-color: #eff2f1;
+  /* padding: 5% 6%; */
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.test h2 {
+  grid-area: header;
+  font-weight: 400;
+}
+
+.test q {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.test p {
+  opacity: 0.5;
+  font-size: 2.2vh;
+}
+
+.test .container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: auto; */
+  width: 80vw;
+  overflow: hidden;
+}
+
+.test .content {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  grid-area: test-content;
+  transition-duration: 1s;
+}
+
+.test .test-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  padding: 0 10vw;
+}
+
+.test .test-post .pro-img {
+  width: 62px;
+  height: 62px;
+  margin: 10px 0;
+}
+
+.test .test-post .pro-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.test .navigators {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+}
+
+.test .navigators .navigator {
+  height: 8px;
+  width: 8px;
+  padding: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5px;
+  background-color: #d6d6d6;
+  transition-duration: 0.5s;
+}
+
+.test .navigators .navigator:hover {
+  background-color: #3b5d50;
+}
+
+.test .navigators .selected-navigator {
+  background-color: #3b5d50;
+}
+
+.test button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 0;
+  color: #2f2f2f;
+  transition-duration: 0.5s;
+}
+
+.test button:hover {
+  background-color: #3b5d50;
+  color: white;
+}
+
+.test .prev-button {
+  grid-area: button1;
+  margin-left: 10px;
+}
+
+.test .next-button {
+  grid-area: button2;
+  margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+  .test .prev-button,
+  .test .next-button {
+    display: none;
+  }
+
+  .test .content {
+    width: 400%;
+  }
+
+  .test .test-post {
+    width: 100vw;
+  }
+
+  .test .container {
+    width: 100vw;
+  }
+}
